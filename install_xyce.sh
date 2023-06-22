@@ -15,6 +15,8 @@ cd build
 time make -j$(nproc)
 
 make install 
+cd ..
+
 
 
 

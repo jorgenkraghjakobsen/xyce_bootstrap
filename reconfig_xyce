@@ -1,0 +1,10 @@
+#!/bin/sh 
+
+$HOME/opentools/bootstrap_xyce/Xyce-7.6/configure \
+CXXFLAGS="-O3" \
+ARCHDIR="$HOME/opentools/XyceLibs/Serial" \
+CPPFLAGS="-I/usr/include/suitesparse" \
+--enable-stokhos \
+--enable-amesos2 \
+--prefix=$HOME/opentools/XyceInstall/Serial
+
