@@ -1,0 +1,13 @@
+#!/bin/sh 
+
+$HOME/opentools/bootstrap_xyce/Xyce-7.6/configure \
+CXXFLAGS="-O3" \
+ARCHDIR="$HOME/opentools/XyceLibs/Parallel" \
+CPPFLAGS="-I/usr/include/suitesparse" \
+--enable-mpi \
+CXX=mpicxx \
+CC=mpicc \
+F77=mpif77 \
+--enable-stokhos \
+--enable-amesos2 \
+--prefix=$HOME/opentools/XyceInstall/Parallel
