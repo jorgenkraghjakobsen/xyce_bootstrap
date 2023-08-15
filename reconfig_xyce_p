@@ -1,6 +1,6 @@
 #!/bin/sh 
 
-$HOME/opentools/bootstrap_xyce/Xyce-7.6/configure \
+$HOME/opentools/xyce_bootstrap/Xyce-7.6/configure \
 CXXFLAGS="-O3" \
 ARCHDIR="$HOME/opentools/XyceLibs/Parallel" \
 CPPFLAGS="-I/usr/include/suitesparse" \
